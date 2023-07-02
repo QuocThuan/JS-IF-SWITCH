@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <ul class="nav nav-tabs my-4" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="bt1-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Bài Tập 1</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="bt2-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Bài Tập 2</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="bt3-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Bài Tập 3</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bt4-tab" data-bs-toggle="tab" data-bs-target="#bt4-tab-pane" type="button" role="tab" aria-controls="bt4-tab-pane" aria-selected="false">Bài Tập 4</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bt5-tab" data-bs-toggle="tab" data-bs-target="#bt5-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Bài Tập 5</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bt6-tab" data-bs-toggle="tab" data-bs-target="#bt6-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Bài Tập 6</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bt7-tab" data-bs-toggle="tab" data-bs-target="#bt7-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Bài Tập 7</button>
+            </li>
+            
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="bt1-tab" tabindex="0">
+                <h2 class="mt-3">Bài tập 1: Sắp xếp 3 số nguyên theo thứ tự tăng dần</h2>
+                <div class="mt-2">
+                  <label for="" class="form-label">Nhập số nguyên thứ 1</label>
+                  <input type="text"
+                    class="form-control" name="" id="txtSoNguyen1" aria-describedby="helpId" placeholder="">
+                  <label for="" class="form-label">Nhập số nguyên thứ 2</label>
+                  <input type="text"
+                      class="form-control" name="" id="txtSoNguyen2" aria-describedby="helpId" placeholder="">
+                  <label for="" class="form-label">Nhập số nguyên thứ 3</label>
+                  <input type="text"
+                    class="form-control" name="" id="txtSoNguyen3" aria-describedby="helpId" placeholder="">
+                </div>
+                <button class="btn btn-primary text-white bg-opacity-75 my-2" id="sapXep">Tính</button>
+                <div class="text-white bg-black py-3" id="thuTuTangDan"></div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="bt2-tab" tabindex="0">
+                <h2 class="mt-3">Bài Tập 2: Viết chương trình chào hỏi</h2>
+                <div class="mb-3">
+                    <label for="" class="form-label">Chọn người sử dụng máy</label>
+                    <select class="form-select form-select-lg" name="" id="nguoiSuDung">
+                        <option value="B">Bố(B)</option>
+                        <option value="M">Mẹ(M)</option>
+                        <option value="A">Anh Trai(A)</option>
+                        <option value="E">Em gái(E)</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary text-white bg-opacity-75 my-2" id="summit">Submit</button>
+                <div class="text-white bg-black py-3" id="showLoiChao"></div>
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="bt3-tab" tabindex="0">
+                <h2>Bài Tập 3: Số lẻ và số chẵn từ 3 số nguyên</h2>
+                <div class="mt-2">
+                    <label for="" class="form-label">Nhập số nguyên thứ 1</label>
+                    <input type="text"
+                      class="form-control" name="" id="txtSo1" aria-describedby="helpId" placeholder="">
+                    <label for="" class="form-label">Nhập số nguyên thứ 2</label>
+                    <input type="text"
+                        class="form-control" name="" id="txtSo2" aria-describedby="helpId" placeholder="">
+                    <label for="" class="form-label">Nhập số nguyên thứ 3</label>
+                    <input type="text"
+                      class="form-control" name="" id="txtSo3" aria-describedby="helpId" placeholder="">
+                  </div>
+                <button class="btn btn-primary text-white bg-opacity-75 my-2" id="tinhChanLe">Tính</button>
+                <div class="text-white bg-black py-3" id="soLuong"></div>
+            </div>
+            <div class="tab-pane fade" id="bt4-tab-pane" role="tabpanel" aria-labelledby="bt4-tab" tabindex="0">
+                <h2>Bài Tập 4: Hiển thị loại tam giác</h2>
+                <div class="mt-2">
+                    <label for="" class="form-label">Nhập giá trị cạnh thứ nhất</label>
+                    <input type="text"
+                      class="form-control" name="" id="txtCanh1" aria-describedby="helpId" placeholder="">
+                    <label for="" class="form-label">Nhập giá trị cạnh thứ hai</label>
+                    <input type="text"
+                        class="form-control" name="" id="txtCanh2" aria-describedby="helpId" placeholder="">
+                    <label for="" class="form-label">Nhập giá trị cạnh thứ ba</label>
+                    <input type="text"
+                      class="form-control" name="" id="txtCanh3" aria-describedby="helpId" placeholder="">
+                  </div>
+                <button class="btn btn-primary text-white bg-opacity-75 my-2" id="loaiTamGiac">Tính</button>
+                <div class="text-white bg-black py-3" id="showLoaiTamGiac"></div>
+            </div>
+            <div class="tab-pane fade" id="bt5-tab-pane" role="tabpanel" aria-labelledby="bt5-tab" tabindex="0">
+                <h2>Bài Tập 5: Ngày tháng năm trước và sau</h2>
+                <div class="mt-2">
+                    <label for="" class="form-label">Nhập ngày</label>
+                    <input type="text"
+                      class="form-control" name="" id="ngay" aria-describedby="helpId" placeholder="">
+                    <label for="" class="form-label">Nhập tháng</label>
+                    <input type="text"
+                        class="form-control" name="" id="thang" aria-describedby="helpId" placeholder="">
+                    <label for="" class="form-label">Nhập năm</label>
+                    <input type="text"
+                      class="form-control" name="" id="nam" aria-describedby="helpId" placeholder="">
+                  </div>
+                <button class="btn btn-primary text-white bg-opacity-75 my-2" id="ketqua">Tính</button>
+                <div class="text-white bg-black py-3" id="showNgayTruoc"></div>
+                <div class="text-white bg-black py-3" id="showNgaySau"></div>
+            </div>
+            <div class="tab-pane fade" id="bt6-tab-pane" role="tabpanel" aria-labelledby="bt6-tab" tabindex="0">
+                <h2>Bài Tập 6: Số ngày của tháng</h2>
+                <div class="mt-2">
+                    <label for="" class="form-label">Nhập tháng</label>
+                    <input type="text"
+                        class="form-control" name="" id="txtThang" aria-describedby="helpId" placeholder="">
+                    <label for="" class="form-label">Nhập năm</label>
+                    <input type="text"
+                      class="form-control" name="" id="txtNam" aria-describedby="helpId" placeholder="">
+                  </div>
+                <button class="btn btn-primary text-white bg-opacity-75 my-2" id="ketQuaNgay">Tính</button>
+                <div class="text-white bg-black py-3" id="showSoNgay"></div>
+            </div>
+            
+            
+            
+          </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
